@@ -1,11 +1,11 @@
 // Generate random password
 
-let generatePassword = (lengthOfPassword) => {
+const generatePassword = (lengthOfPassword) => {
   const max = characters.length;
-  key = [];
+  const key = [];
   key.length = lengthOfPassword;
   for (let i = 0; i < lengthOfPassword; i++) {
-    Index = Math.floor(Math.random() * max);
+    const Index = Math.floor(Math.random() * max);
     key[i] = characters[Index];
   }
   return key;
